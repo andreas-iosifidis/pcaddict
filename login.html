@@ -1,0 +1,25 @@
+<html>
+<head><title>login</title>
+<link href="styling.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+	
+	
+	
+<p id="homepage"><a href="index.html">homepage</a></p>
+<h2 id="fill">Please fill in your data.</h2>
+<div>
+<form action="login.php" method="post" onsubmit="return checkValidity();" >
+<p id="Login1">Username:</p><input type="text" name="username" id="user" 
+maxlength="30" required="required"/>
+<br />
+<P id="Login2">Password:</P><input type="password" name="password" id="pass"
+maxlength="30" required="required"/> 
+<input type="submit" name="login" />
+
+</form>
+</div>
+
+</body>
+</html>
