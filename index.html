@@ -1,0 +1,93 @@
+<!--
+   untitled.html
+   
+   Copyright 2019 andrew <andrew@ANDREAS>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>PCmania</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="description" content="online computer parts eshop" />
+	<meta name="keywords" content="computers, parts, eshop, order" /> 
+	<link href="styling.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="jquery"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+	<style>
+.mySlides {display:none;}
+
+</style>
+</head>
+
+<body>
+	<div id="header">
+	<h1 id="welcome">PCaddict</h1>
+	<h3 id="login" class="logSign"><a href="login.html">login</a></h3>
+	<h3 id="sign up" class="logSign"><a href="sign up.html">signup</a></h3>
+<span class="info">
+	<p id="about" class="info"><a href="aboutus.html" 
+	style="text-decoration:none">About us</a></p> 
+	<p id="contact" class="info"><a href="#ContactUs" 
+	style="text-decoration:none">Contact</a></p>
+	</span></div>
+	<h2 class="center">Some of our Products</h2>
+
+<div class="content display-container">
+  <img class="mySlides" src="img11.jpg" style="width:100%">
+  <img class="mySlides" src="img12.jpg" style="width:100%">
+  <img class="mySlides" src="img21.jpeg" style="width:100%">
+  <img class="mySlides" src="img22.jpg" style="width:100%">
+
+  <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	
+	<div id="Contactus"><fieldset>
+	<legend>Contact us</legend>
+	<div class="bb"><p>Telephone - 6978675930</p>
+	<p>Email - <a href="mailto:PCaddict@gmail.com">PCaddict@gmail.com</a></p>
+	</div></fieldset></div>
+	
+</body>
+
+</html>
